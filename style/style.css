@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  background: #f9c93e;
+}
+
+.container {
+  max-height: 30rem;
+  margin: 50px 15%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.wallets {
+  display: block;
+  padding: 10px 20px;
+  background: #dddddd;
+  width: 40%;
+  overflow: auto;
+}
+.wallets::-webkit-scrollbar {
+  width: 10px;
+}
+.wallets::-webkit-scrollbar-track {
+  background: #fff;
+}
+.wallets::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.418);
+  border-radius: 10px;
+}
+.wallets .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wallets .header button {
+  padding: 4px 12px;
+  font-size: 30px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  transition: 0.3s all;
+}
+.wallets .header button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.wallets .cards {
+  display: block;
+  margin: 10px 0;
+}
+.wallets .cards .card {
+  width: 80%;
+  margin: 20px 10%;
+  border: 1px solid black;
+  padding: 10px 0 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  transition: 0.3s all;
+  border-radius: 5px;
+  color: #8c8c8c;
+  background: #fff;
+}
+.wallets .cards .card.act {
+  border: 2px solid #1976d2;
+}
+.wallets .cards .card:hover {
+  cursor: pointer;
+  border: 1px solid #1976d2;
+  transform: scale(1.05);
+}
+.wallets .cards .card .logo-card img {
+  width: 150px;
+}
+
+.balance {
+  display: block;
+  overflow: auto;
+  background: #fff;
+  width: 60%;
+  padding: 10px 25px;
+}
+.balance::-webkit-scrollbar {
+  width: 10px;
+}
+.balance::-webkit-scrollbar-track {
+  background: #fff;
+}
+.balance::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.418);
+  border-radius: 10px;
+}
+.balance .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #8c8c8c;
+}
+.balance .price {
+  font-size: 25px;
+  font-weight: 600;
+}
+.balance .price span {
+  font-size: 10px;
+}
+.balance .price.blue {
+  color: #004d99;
+}
+.balance .price.green {
+  color: #168039;
+}
+.balance .history {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.balance .history .hist-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  transition: 0.3s all;
+}
+.balance .history .hist-item:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.balance .history .hist-item .icon i {
+  font-size: 30px;
+  color: #8c8c8c;
+  font-weight: 300;
+}
+.balance .history .hist-item .header-item {
+  font-weight: 600;
+  font-size: 18px;
+}
+.balance .history .hist-item .para-item {
+  font-weight: 400;
+  font-size: 14px;
+  color: #8c8c8c;
+}/*# sourceMappingURL=style.css.map */
