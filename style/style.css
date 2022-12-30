@@ -21,6 +21,7 @@ body {
   background: #dddddd;
   width: 40%;
   overflow: auto;
+  border-radius: 10px;
 }
 .wallets::-webkit-scrollbar {
   width: 10px;
